@@ -1,6 +1,6 @@
 {
   "name": "expand-object-keys",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Expand dotty object keys to objects",
   "license": "MIT",
   "repository": "stoeffel/expand-object-keys",
@@ -13,15 +13,14 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-		"develop": "nodangel --ignore node_modules --ignore 'npm run --silent test'",
-		"test": "mocha ./tests --compilers js:babel/register",
-		"hint": "jshint ./module/*",
+    "develop": "nodangel --ignore node_modules --ignore 'npm run --silent test'",
+    "test": "mocha ./tests --compilers js:babel/register",
+    "hint": "jshint ./module/*",
     "transpile": "babel module --out-dir ./",
     "prepublish": "npm run transpile",
-
-		"patch-release": "npm version patch && npm publish && git push --follow-tags",
-		"minor-release": "npm version minor && npm publish && git push --follow-tags",
-		"major-release": "npm version major && npm publish && git push --follow-tags"
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
+    "minor-release": "npm version minor && npm publish && git push --follow-tags",
+    "major-release": "npm version major && npm publish && git push --follow-tags"
   },
   "files": [
     "index.js"
@@ -32,7 +31,7 @@
   "dependencies": {},
   "devDependencies": {
     "mocha": "^2.2.5",
-		"babel": "^5.8.20",
-		"jshint": "^2.8.0"
+    "babel": "^5.8.20",
+    "jshint": "^2.8.0"
   }
 }
