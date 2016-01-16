@@ -1,5 +1,5 @@
 import assert from 'assert';
-import { expandObjectKeys } from '../module';
+import expandObjectKeys from '../module';
 
 describe('expandObjectKeys', () => {
 	it('should Expand dotty object keys to objects', () => {
