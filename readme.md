@@ -13,7 +13,7 @@ $ npm install --save expand-object-keys
 ## Usage
 
 ```js
-import { expandObjectKeys } from 'expand-object-keys';
+import expandObjectKeys from 'expand-object-keys';
 
 
 const obj = {

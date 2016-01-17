@@ -1,4 +1,4 @@
-export function expandObjectKeys (obj) {
+export default function expandObjectKeys (obj) {
   if (obj == null) throw new TypeError('expandObjectKeys cannot be called with null or undefined');
 
   const expand = (newObj, key, idx, keys) => {
